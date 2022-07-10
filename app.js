@@ -10,7 +10,7 @@ app.use('/api',routing)
 app.use('/api',routing1)
 
 
-app.listen(3001,()=>{
+app.listen(process.env.PORT||8000,()=>{
     console.log("app is running ");
 }
 )
